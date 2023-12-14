@@ -50,7 +50,7 @@ termux() {
     echo -e "${GREEN}Dependencies installed.${NC}"
 }
 
-other_os() {
+other_os() {    
     echo -e "${RED}Please install the dependencies manually.${NC}"
     echo -e "${GREEN}Dependencies:${NC}"
     echo -e "${GREEN}1. Python Version 3+${NC}"
@@ -63,7 +63,8 @@ check_os() {
     echo -e "${GREEN}Enter 1 for Ubuntu/Debian${NC}"
     echo -e "${GREEN}Enter 2 for Arch/Manjaro${NC}"
     echo -e "${GREEN}Enter 3 for fedora${NC}"
-    echo -e "${GREEN}Enter 4 for other${NC}"
+    echo -e "${GREEN}Enter 4 for Termux${NC}"
+    echo -e "${GREEN}Enter 5 for other${NC}"
     read os
 
     if [ $os == "1" ]; then
